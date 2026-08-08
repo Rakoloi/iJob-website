@@ -14,7 +14,7 @@ export default function Logo() {
 
       <span>
         <Image 
-          src="/images/Logo.png"
+          src={`${process.env.NODE_ENV === "production" ? "/iJob-website" : ""}/images/Logo.png`}
           alt="Rakoloi Mosa, Software Developer and creator of iJob"
           width={100}
           height={100}

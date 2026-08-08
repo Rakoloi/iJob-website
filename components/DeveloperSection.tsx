@@ -35,7 +35,8 @@ export default function DeveloperSection() {
               <div className="relative size-60 overflow-hidden rounded-full border-8 border-white bg-[#168a45] shadow-2xl shadow-green-900/20">
                 
                 <Image
-                    src="/images/Mosa.jpeg"
+                    //src="/images/Mosa.jpeg"
+                    src={`${process.env.NODE_ENV === "production" ? "/iJob-website" : ""}/images/Mosa.jpeg`}
                     alt="Rakoloi Mosa, Software Developer and creator of iJob"
                     fill
                     sizes="(max-width: 768px) 220px, 240px"

@@ -65,7 +65,8 @@ export default function HeroSection() {
             className="phone-shadow relative overflow-hidden rounded-[2.7rem] border-[9px] border-slate-950 bg-slate-950"
           >
             <Image
-              src="/images/available-jobs.jpeg"
+              // src="/images/available-jobs.jpeg"
+              src={`${process.env.NODE_ENV === "production" ? "/iJob-website" : ""}/images/available-jobs.jpeg`}
               alt="iJob available jobs screen"
               width={720}
               height={1280}

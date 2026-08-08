@@ -23,7 +23,8 @@ export default function HowItWorksSection() {
           <div className="absolute -inset-8 -z-10 rounded-full bg-green-200/50 blur-3xl" />
           <div className="phone-shadow overflow-hidden rounded-[2.7rem] border-[9px] border-slate-950 bg-slate-950">
             <Image
-              src="/images/job-details.jpeg"
+              // src="/images/job-details.jpeg"
+              src={`${process.env.NODE_ENV === "production" ? "/iJob-website" : ""}/images/job-details.jpeg`}
               alt="iJob job details screen with location"
               width={720}
               height={1280}

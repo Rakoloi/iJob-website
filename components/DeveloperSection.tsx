@@ -97,7 +97,7 @@ export default function DeveloperSection() {
               className="relative shrink-0 overflow-hidden rounded-[1.4rem] border-4 border-white bg-green-100 shadow-lg"
             >
               <Image
-                src="/images/Mosa.jpeg"
+                src={`${process.env.NODE_ENV === "production" ? "/iJob-website" : ""}/images/Mosa.jpeg`}
                 alt="Rakoloi Mosa, creator of iJob"
                 fill
                 sizes="180px"

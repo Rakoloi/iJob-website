@@ -18,17 +18,17 @@ export default function HowItWorksSection() {
           initial={{ opacity: 0, x: -25 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="relative mx-auto w-full max-w-[380px]"
+          className="relative mx-auto w-full max-w-[400px]"
         >
           <div className="absolute -inset-8 -z-10 rounded-full bg-green-200/50 blur-3xl" />
-          <div className="phone-shadow overflow-hidden rounded-[2.7rem] border-[9px] border-slate-950 bg-slate-950">
+          {/* <div className="phone-shadow overflow-hidden rounded-[2.7rem] border-[9px] border-slate-950 bg-slate-950"> */}
+          <div>
             <Image
-              // src="/images/job-details.jpeg"
-              src={`${process.env.NODE_ENV === "production" ? "/iJob-website" : ""}/images/job-details.jpeg`}
+              src={`${process.env.NODE_ENV === "production" ? "/iJob-website" : ""}/images/active jobs.png`}
               alt="iJob job details screen with location"
-              width={720}
+              width={990}
               height={1280}
-              className="w-full rounded-[2.15rem]"
+              className="w-full "
             />
           </div>
         </motion.div>
